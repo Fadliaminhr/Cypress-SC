@@ -1,0 +1,15 @@
+Berikut adalah beberapa ekstensi yang direkomendasikan untuk Cypress di Visual Studio Code (VS Code):
+
+    Cypress Helper (oleh @bahmutov): Ekstensi ini menyediakan fitur pencarian cepat untuk perintah-perintah Cypress dan asersi. Dengan cepat dapatkan dokumentasi dan contoh kode untuk berbagai perintah Cypress.
+
+    Cypress Snippets (oleh Rob Eberhardt): Ekstensi ini menyediakan sekumpulan snippets yang mempercepat penulisan kode dalam pengujian Cypress. Anda dapat dengan mudah mengakses dan memasukkan potongan kode yang umum digunakan dalam pengujian Cypress.
+
+    Cypress Auto Completion (oleh Richard Almeida): Ekstensi ini memberikan dukungan otomatisasi lengkap untuk penyelesaian dan linting kode Cypress saat Anda menulis pengujian di VS Code.
+
+    Cypress Intellisense (oleh Christian Senger): Ekstensi ini menyediakan penyelesaian otomatis untuk perintah-perintah dan objek-objek Cypress yang digunakan dalam kode pengujian Anda.
+
+    Prettier - Code Formatter (oleh Prettier): Prettier adalah ekstensi yang memformat kode Anda dengan cara yang konsisten dan rapi. Ini membantu menjaga kualitas kode dan membuatnya lebih mudah dibaca.
+
+    ESLint (oleh Dirk Baeumer): Jika Anda menggunakan ESLint untuk mengenali dan memperbaiki masalah pada kode JavaScript Anda, ekstensi ini menyediakan dukungan untuk itu di VS Code.
+
+    Code Spell Checker (oleh Street Side Software): Ekstensi ini membantu Anda mengecek ejaan dan kesalahan pengetikan dalam kode Anda. Ini berguna untuk menghindari kesalahan tipografi dan kesalahan ejaan yang mungkin mempengaruhi kualitas kode.
