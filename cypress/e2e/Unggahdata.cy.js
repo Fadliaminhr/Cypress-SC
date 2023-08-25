@@ -12,11 +12,12 @@ describe ('Dokumen,Unggah Data',() => {
         // Navigate to document distribusi
         cy.get(':nth-child(3) > .ant-menu-submenu-title').click()
         cy.get('a[href*="/delivery/document"]').click({ force: true })
-        cy.get('.ant-tabs-nav > :nth-child(1) > :nth-child(2)').click()
-        // cy.wait(3000)
+        cy.get('.ant-tabs-tab-active').click()
+        cy.wait(3000)
+});
         
     })
-it.only('Unggah Data',()=>{
+it('Unggah Data',()=>{
     
 
     // Navigate to distibusi pengiriman dropdown
@@ -42,22 +43,22 @@ it.only('Unggah Data',()=>{
     cy.get('[style="float: left; margin-left: 5px;"] > :nth-child(3) > b').click()
 
     // Copy value waybill
-    cy.get(':nth-child(1) > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-description > span').invoke('text')
-    .then((text) => {
-    cy.log(`BNKB230804N00001: ${text}`)})
-    cy.get('.ant-modal-close-x').click()
+    // cy.get(':nth-child(1) > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-description > span').invoke('text')
+    // .then((text) => {
+    // cy.log(`BNKB230804N00001: ${text}`)})
+    // cy.get('.ant-modal-close-x').click()
 
-    cy.get(':nth-child(1) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
-    cy.contains('Reguler').click()
-    cy.get(':nth-child(1) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(4) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
-    cy.contains('A4').click()
-    cy.get('[style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(6) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
-    cy.contains('Jabodetabek').click()
-    cy.get(':nth-child(2) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
-    cy.contains('Duren Sawit RDS Express').click()
-    cy.get(':nth-child(2) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(4) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
-    cy.contains('(DRS001)').click()
-    cy.get('.ant-form-item-children > .ant-input').type(text)
+    // cy.get(':nth-child(1) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
+    // cy.contains('Reguler').click()
+    // cy.get(':nth-child(1) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(4) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
+    // cy.contains('A4').click()
+    // cy.get('[style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(6) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
+    // cy.contains('Jabodetabek').click()
+    // cy.get(':nth-child(2) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
+    // cy.contains('Duren Sawit RDS Express').click()
+    // cy.get(':nth-child(2) > [style="text-align: left; padding-right: 20px; padding-left: 20px;"] > :nth-child(4) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click()
+    // cy.contains('(DRS001)').click()
+    // cy.get('.ant-form-item-children > .ant-input').type(text)
 
 })
     
@@ -90,5 +91,4 @@ it('Scan waybill',()=>{
     cy.get('.ant-form-item-children > .ant-input').type(text)
 
 
-})
 })
