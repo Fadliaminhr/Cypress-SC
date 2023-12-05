@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 0,
+    "suites": 1,
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-08-25T03:55:19.361Z",
-    "end": "2023-08-25T03:56:22.750Z",
-    "duration": 63389,
+    "start": "2023-12-05T03:38:52.132Z",
+    "end": "2023-12-05T03:39:14.540Z",
+    "duration": 22408,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,42 +18,61 @@
   },
   "results": [
     {
-      "uuid": "ea1d5c2b-7e41-40ff-8522-93eaeb9b2edd",
+      "uuid": "0bf8bf03-423b-44d7-a2a8-fc45c2fd2656",
       "title": "",
-      "fullFile": "cypress\\e2e\\Uploadfile.cy.js",
-      "file": "cypress\\e2e\\Uploadfile.cy.js",
+      "fullFile": "cypress\\e2e\\statusPengiriman.cy.js",
+      "file": "cypress\\e2e\\statusPengiriman.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
+      "tests": [],
+      "suites": [
         {
-          "title": "Unggah Data ",
-          "fullTitle": "Unggah Data ",
-          "timedOut": null,
-          "duration": 56503,
-          "state": "passed",
-          "speed": "slow",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "code": "// Select 'B N I' from dropdown\ncy.get('.ant-tabs-tab-active').click();\n// Click Pelanggan\ncy.get(':nth-child(1) > [style=\"margin-right: 20px; margin-left: 20px;\"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click();\n// Pilih BNI\ncy.get('.ant-select-dropdown-menu > :nth-child(3)').click();\n/// Click Jenis dokumen\ncy.get(':nth-child(4) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click();\n// Pilih Kartu\ncy.contains('.ant-select-dropdown-menu-item-active', 'Kartu').click();\n// Click produk\ncy.get(':nth-child(6) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click();\n// Pilih produk\ncy.contains('.ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-active', 'Kartu Bni').click();\n// Click template unggah \ncy.get(':nth-child(2) > [style=\"margin-right: 20px; margin-left: 20px;\"] > :nth-child(2) > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-select > .ant-select-selection').click();\n// Pilih template  \ncy.contains('Format CSV BNI (.csv)').click();\n// Click Unggah file\n// Unggah file\ncy.get('.ant-input-affix-wrapper > .ant-input').attachFile('_B N I Format CSV BNI DEV 1.csv');\n// Click 'Tanggal Kirim'\ncy.get('[style=\"margin-top: 30px;\"] > .ant-row > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-calendar-picker > div > .ant-calendar-picker-input').click();\n// Pilih tanggal \"Hari ini\"\ncy.get('.ant-calendar-today-btn').click();\n// Click 'Tanggal Upload'\ncy.get(':nth-child(6) > .ant-row > .ant-col > .ant-form-item-control > .ant-form-item-children > .ant-calendar-picker > div > .ant-calendar-picker-input').click();\n// Pilih tanggal \"Hari ini\"\ncy.get('.ant-calendar-today-btn').click();\n// Click button 'Lanjut'\ncy.get('[style=\"float: right;\"] > .ant-btn').click();\ncy.wait(4000);\ncy.get('[style=\"margin-top: 20px; float: right; padding-right: 20px;\"] > .ant-btn').click();",
-          "err": {},
-          "uuid": "c117350e-a403-4136-99ae-640f62af6db3",
-          "parentUUID": "ea1d5c2b-7e41-40ff-8522-93eaeb9b2edd",
-          "isHook": false,
-          "skipped": false
+          "uuid": "85773fe0-68eb-424b-be4d-a25657a49778",
+          "title": "Status Pengiriman By No Referensi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cek Status by No referensi - Diterima",
+              "fullTitle": "Status Pengiriman By No Referensi Cek Status by No referensi - Diterima",
+              "timedOut": null,
+              "duration": 17234,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ant-select-selection').click();\ncy.get('.ant-select-dropdown-menu > :nth-child(3)').click();\ncy.get('.ant-input').type('REF666');",
+              "err": {},
+              "uuid": "132432ba-9b05-4715-8bbe-cfd9a6f98fce",
+              "parentUUID": "85773fe0-68eb-424b-be4d-a25657a49778",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "132432ba-9b05-4715-8bbe-cfd9a6f98fce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17234,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
         }
       ],
-      "suites": [],
-      "passes": [
-        "c117350e-a403-4136-99ae-640f62af6db3"
-      ],
+      "passes": [],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 56503,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],

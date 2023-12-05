@@ -6,8 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     reporter: 'mochawesome',
-    
+    projectId: "se8pp1"  // Tambahkan projectId Anda di sini
   },
-  
-   
 });
